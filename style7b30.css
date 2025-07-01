@@ -84,7 +84,7 @@ a {
 }
 
 .title {
-  width: 800px;
+  width:250px;
   display: block;
   z-index: 100;
 }
@@ -807,7 +807,7 @@ hr {
 
 @media only screen and (max-width: 1400px) {
   .title {
-    width: 700px;
+    width: 200px;
   }
 
   .header-img {
@@ -948,7 +948,7 @@ hr {
 
 @media only screen and (max-width: 1000px) {
   .title {
-    width: 600px;
+    width: 150px;
   }
 
   .header-paragraph {
@@ -1119,7 +1119,7 @@ hr {
 
 @media only screen and (max-width: 700px) {	.catketoplogo {font-size:5rem  !important;color:#fff;font-weight:bold}
   .title {
-    width: 400px;
+    width: 150px;
   }
 
   .nav-list {
@@ -1211,7 +1211,7 @@ hr {
 	.makememe{font-size:1.5rem !important;color:#000;font-weight:bold;word-break: break-word;}
 	.catketoplogo {font-size:3rem  !important;color:#fff;font-weight:bold}
   .title {
-    width: 300px;
+    width: 100px;
   }
 
   .header-paragraph {

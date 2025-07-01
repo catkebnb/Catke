@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const backgrounds = document.querySelectorAll(".laboratory-background");
   // const skins = document.querySelectorAll(".laboratory-skin");
-  const mouths = document.querySelectorAll(
-    ".laboratory-mouth .laboratory-image"
-  );
+
   const glasses = document.querySelectorAll(
     ".laboratory-glasse .laboratory-image"
   );
@@ -16,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //ChangeBackground();
   ChangeItem(backgrounds, "pfp-background");
   // ChangeItem(skins, "pfp-skin");
-  ChangeItem(mouths, "pfp-mouth");
+
   ChangeItem(eyes, "pfp-eye");
   ChangeItem(heads, "pfp-head");
   ChangeItem(glasses, "pfp-glasses");
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   scroll(".laboratory-backgrounds-wraper", ".scroll-backgrounds");
   // scroll(".laboratory-skins-wraper", ".scroll-skins");
-  scroll(".laboratory-mouths-wraper", ".scroll-mouths");
   scroll(".laboratory-eyes-wraper", ".scroll-eyes");
   scroll(".laboratory-heads-wraper", ".scroll-heads");
   scroll(".laboratory-glasses-wraper", ".scroll-glasses");
@@ -45,12 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //   .slice(4, -1)
     //   .replace(/"/g, "")})`;
 
-    document.getElementById("pfp-mouth").style.backgroundImage = `url(${mouths[
-      getRandomInt(0, mouths.length)
-    ].style.backgroundImage
-      .slice(4, -1)
-      .replace(/"/g, "")})`;
-
+   
     document.getElementById("pfp-eye").style.backgroundImage = `url(${eyes[
       getRandomInt(0, eyes.length)
     ].style.backgroundImage
