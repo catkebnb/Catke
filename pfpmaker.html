@@ -1637,7 +1637,7 @@
         </div>
       </section>
     </div>
-    <script>
+   <script>
       document.addEventListener("DOMContentLoaded", () => {
         const container = document.getElementById("backgrounds-container");
         const totalBackgrounds = 43;
@@ -1645,7 +1645,7 @@
         for (let i = 1; i <= totalBackgrounds; i++) {
           const bgDiv = document.createElement("div");
           bgDiv.className = "laboratory-background laboratory-img";
-          bgDiv.style.backgroundImage = `url('Imgs/laboratory/Backgrounds/%24%7bi%7d.html')`;
+          bgDiv.style.backgroundImage = `url('./Imgs/laboratory/Backgrounds/${i}.png')`;
           container.appendChild(bgDiv);
         }
       });
@@ -1661,12 +1661,12 @@
 
           // Skin layer (assuming same skin for all)
           clothDiv.style.backgroundImage =
-            'url("Imgs/laboratory/Skins/1.png")';
+            'url("./Imgs/laboratory/Skins/1.png")';
 
           // Clothing layer
           const clothingLayer = document.createElement("div");
           clothingLayer.className = "laboratory-image";
-          clothingLayer.style.backgroundImage = `url('Imgs/laboratory/Clothes/%24%7bi%7d.html')`;
+          clothingLayer.style.backgroundImage = `url('./Imgs/laboratory/Clothes/${i}.PNG')`;
 
           clothDiv.appendChild(clothingLayer);
           container.appendChild(clothDiv);
@@ -1677,8 +1677,9 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
       onload="startApp()"
     ></script>
-    <script src="https://catke-mu.vercel.app/pfpmakeae52.js?v=5"></script>
+   
+<script src="https://catke-mu.vercel.app/pfpmakeae52.js?v=5"></script>
   </body>
-
-<!-- Mirrored from lanlancat.com/pfpmaker.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jun 2025 14:49:37 GMT -->
 </html>
+
+

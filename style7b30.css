@@ -1208,7 +1208,7 @@ hr {
 }
 
 @media only screen and (max-width: 500px) {
-	.makememe{font-size:2rem !important;color:#000;font-weight:bold;word-break: break-word;}
+	.makememe{font-size:1.5rem !important;color:#000;font-weight:bold;word-break: break-word;}
 	.catketoplogo {font-size:3rem  !important;color:#fff;font-weight:bold}
   .title {
     width: 300px;
