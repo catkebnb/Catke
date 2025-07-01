@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;display=swap");
+
+body {
+  margin: 0;
+  background-color: #f4e9df;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+nav {
+  background-color: #252322;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-brand img {
+  width: 13.02vw; /* 250px */
+}
+
+.nav-brand p {
+  margin: 0;
+  color: #ecbb63;
+}
+
+#back-button {
+  background: #dd9d45;
+  background: linear-gradient(
+    290deg,
+    rgba(221, 157, 69, 1) 0%,
+    rgba(236, 187, 99, 1) 100%
+  );
+  position: absolute;
+  left: 1.56vw; /* 30px */
+  font-family: "Dela Gothic One", sans-serif;
+  color: #252322;
+  padding: 0.52vw 0.78vw; /* 10px 15px */
+  font-size: 1.35vw; /* 26px */
+  cursor: pointer;
+  z-index: 999999;
+  text-decoration: none;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: 0.52vw; /* 10px */
+}
+
+.factory-container {
+  display: flex;
+  height: 85vh;
+}
+
+.factory {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.factory-modal {
+  background-color: #fff;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 0.83vw 0.83vw 0px -0.26vw; /* 16px 16px 0px -5px */
+  border: 0.156vw solid #252322; /* 3px */
+  width: 29.17vw; /* 560px */
+  height: 29.17vw; /* 560px */
+  padding: 1.04vw 0.2vw 1.04vw 1.04vw; /* 20px */
+}
+
+.laboratory-backgrounds-container,
+.laboratory-skins-container,
+.laboratory-mouths-container,
+.laboratory-eyes-container,
+.laboratory-heads-container,
+.laboratory-glasses-container,
+.laboratory-clothes-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1.04vw; /* 20px */
+}
+
+.laboratory-backgrounds-wraper,
+.laboratory-skins-wraper,
+.laboratory-mouths-wraper,
+.laboratory-eyes-wraper,
+.laboratory-heads-wraper,
+.laboratory-glasses-wraper,
+.laboratory-clothes-wraper {
+  width: 25.1vw; /* 482px */
+  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.laboratory-backgrounds-wraper::-webkit-scrollbar,
+.laboratory-skins-wraper::-webkit-scrollbar,
+.laboratory-mouths-wraper::-webkit-scrollbar,
+.laboratory-eyes-wraper::-webkit-scrollbar,
+.laboratory-heads-wraper::-webkit-scrollbar,
+.laboratory-glasses-wraper::-webkit-scrollbar,
+.laboratory-clothes-wraper::-webkit-scrollbar {
+  display: none;
+}
+
+.laboratory-background,
+.laboratory-skin,
+.laboratory-mouth,
+.laboratory-eye,
+.laboratory-head,
+.laboratory-glasse,
+.laboratory-clothe {
+  width: 4vw; /* 70px */
+  height: 4vw; /* 70px */
+  margin-right: 1.04vw; /* 20px */
+  cursor: pointer;
+  border: 0.104vw solid #2b2b4f; /* 2px */
+  display: inline-block;
+  position: relative;
+}
+
+.laboratory-img,
+.laboratory-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.laboratory-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.laboratory-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 1.04vw; /* 20px */
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-color: #252322 white;
+}
+
+.hidden-lab {
+  display: none;
+}
+
+.scroll-left,
+.scroll-right {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+/*===========================================================*/
+
+.pfp-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.04vw; /* 20px */
+  width: 50%;
+}
+
+.pfp {
+  height: 20.83vw; /* 400px */
+  width: 20.83vw; /* 400px */
+  border: 0.156vw solid #252322; /* 3px */
+}
+
+.pfp-elements {
+  height: 20.83vw;
+  width: 20.83vw;
+}
+
+.random-button,
+.download-button {
+  width: fit-content;
+  padding: 0.52vw; /* 10px */
+  font-size: 1.3vw; /* 25px */
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: #252322 0.36vw 0.36vw; /* 7px 7px */
+  border: 0.156vw solid #252322; /* 3px */
+}
+
+.random-button {
+  background-color: white;
+  color: #252322;
+}
+
+.download-button {
+  background-color: #ecbb63;
+  color: #252322;
+}
+
+.pfp-img-elements {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+#pfp-background {
+  z-index: 0;
+}
+
+#pfp-clothes {
+  z-index: 2;
+}
+
+#pfp-skin {
+  z-index: 1;
+}
+
+#pfp-mouth {
+  z-index: 4;
+}
+
+#pfp-eye {
+  z-index: 3;
+}
+
+#pfp-glasses {
+  z-index: 5;
+}
+
+#pfp-head {
+  z-index: 6;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    height: 10vh;
+  }
+
+  .factory-container {
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .factory {
+    order: 2;
+    height: 50%;
+    width: 100%;
+  }
+
+  .factory-modal {
+    border: 0.75vw solid #252322; /* 3px */
+    width: 50vw; /* 560px */
+    height: 50vw; /* 560px */
+    padding: 1.25vw; /* 20px */
+  }
+
+  .pfp-display {
+    height: 50%;
+    width: 100%;
+    gap: 2vw;
+  }
+
+  .pfp {
+    height: 35vw; /* 400px */
+    width: 35vw; /* 400px */
+    border: 0.75vw solid #252322; /* 3px */
+  }
+
+  .pfp-elements {
+    height: 35vw; /* 400px */
+    width: 35vw; /* 400px */
+  }
+
+  .random-button,
+  .download-button {
+    padding: 1vw; /* 10px */
+    font-size: 3vw; /* 25px */
+    box-shadow: #252322 0.75vw 0.75vw; /* 7px 7px */
+    border: 0.5vw solid #252322; /* 3px */
+  }
+
+  h4 {
+    font-size: 2vw;
+    margin-bottom: 0.52vw; /* 10px */
+  }
+
+  .laboratory-background,
+  .laboratory-skin,
+  .laboratory-mouth,
+  .laboratory-eye,
+  .laboratory-head,
+  .laboratory-glasse,
+  .laboratory-clothe {
+    width: 7vw; /* 70px */
+    height: 7vw; /* 70px */
+    margin-right: 1.5vw; /* 20px */
+    border: 0.3vw solid #2b2b4f; /* 2px */
+  }
+
+  .laboratory-backgrounds-wraper,
+  .laboratory-skins-wraper,
+  .laboratory-mouths-wraper,
+  .laboratory-eyes-wraper,
+  .laboratory-heads-wraper,
+  .laboratory-glasses-wraper,
+  .laboratory-clothes-wraper {
+    width: 50vw;
+  }
+
+  .nav-brand img {
+    width: 22.5vw;
+  }
+
+  .nav-brand p {
+    font-size: 1.75vw;
+  }
+
+  #back-button {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    height: 7.5vh;
+  }
+
+  .factory-container {
+    flex-direction: column;
+    height: 92.5vh;
+  }
+
+  .factory-modal {
+    width: 90vw; /* 560px */
+    height: 90%; /* 560px */
+    padding: 1.5vw; /* 20px */
+  }
+
+  .pfp-display {
+    gap: 2vw;
+  }
+
+  .pfp {
+    height:52vw; /* 400px */
+    width: 52vw; /* 400px */
+    border: 0.75vw solid #252322; /* 3px */
+  }
+
+  .pfp-elements {
+    height: 52vw; /* 400px */
+    width: 52vw; /* 400px */
+  }
+
+  .random-button,
+  .download-button {
+    padding: 1.25vw; /* 10px */
+    font-size: 4vw; /* 25px */
+    box-shadow: #252322 1vw 1vw; /* 7px 7px */
+    border: 0.75vw solid #252322; /* 3px */
+  }
+
+  h4 {
+    font-size: 4vw;
+    margin-bottom: 0.7vw; /* 10px */
+  }
+
+  .laboratory-background,
+  .laboratory-skin,
+  .laboratory-mouth,
+  .laboratory-eye,
+  .laboratory-head,
+  .laboratory-glasse,
+  .laboratory-clothe {
+    width: 12vw; /* 70px */
+    height: 12vw; /* 70px */
+    border: 0.5vw solid #2b2b4f; /* 2px */
+  }
+
+  .laboratory-backgrounds-wraper,
+  .laboratory-skins-wraper,
+  .laboratory-mouths-wraper,
+  .laboratory-eyes-wraper,
+  .laboratory-heads-wraper,
+  .laboratory-glasses-wraper,
+  .laboratory-clothes-wraper {
+    width: 90vw;
+  }
+
+  .nav-brand img {
+    width: 25vw;
+  }
+
+  .nav-brand p {
+    font-size: 2vw;
+  }
+
+  #back-button {
+    font-size: 3.5vw;
+  }
+
+  .scroll-left,
+  .scroll-right {
+    font-size: 5vw;
+  }
+}

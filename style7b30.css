@@ -1,0 +1,1461 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {font-weight:bold;font-size:30px;
+  margin: 0;
+  background-color: #f4e9df;
+  position: relative;
+}
+
+header {
+  background-color: #252322;
+  height: 100vh;
+  background: #ffbf00;
+ 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  position: relative;
+}
+.origin-text{font-size:1.2rem;}
+.emoji {
+  position: absolute;
+  width: 80px;
+  object-fit: contain;
+  left: 20px;
+  top: 10px;
+}
+
+nav {
+  padding: 35px 0;
+  grid-area: 1 / 1 / 2 / 6;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  margin: auto;
+  background-color: #252322;
+  padding-left: 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.nav-list {
+  margin: 0 20px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 25px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #f8c205;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: 2 / 1 / 7 / 2;
+  position: relative;
+}
+
+.title {
+  width: 800px;
+  display: block;
+  z-index: 100;
+}
+
+.header-paragraph {
+  color: black;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  width: 900px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#buy-coin {
+  color: #000000;
+  font-family: "Dela Gothic One", sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  background-color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin-top: 55px;
+  z-index: 10;
+}
+
+#buy-coin:hover {
+  background-color: #f8c205;
+  color: #252322;
+}
+
+.header-img {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: -14px;
+}
+.makememe{font-size:3rem;color:#000;font-weight:bold;}
+ .about-img img {
+    width: 350px;
+  }
+   .origin-img img {
+    width: 305px;
+  }
+.catketoplogo {font-size:9rem;color:#fff;font-weight:bold}
+.social-header-container {
+  font-family: "Dela Gothic One", sans-serif;
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  bottom: 7.5%;
+  left: 4.5%;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 16px 16px 0px -5px;
+  border: 3px solid #252322;
+}
+
+.social-header-container .top-content {
+  background-color: #f8c205;
+  padding: 15px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: #252322;
+}
+
+.social-header-container .bottom-content {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.social-links {
+  font-size: 30px;
+  color: white;
+  background-color: #e73737;
+  margin-right: 20px;
+  padding: 5px 12px;
+}
+
+.close-button:hover {
+  color: #e73737;
+  cursor: pointer;
+}
+
+.social-links:hover {
+  background-color: #f8c205;
+  color: #252322;
+}
+
+.header-icons {
+  position: absolute;
+  width: 100px;
+}
+
+/* ABOUT */
+
+.about,
+.tokenmics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dela Gothic One", sans-serif;
+  padding: 160px 0;
+}
+
+.about-img {
+  margin-right: 80px;
+}
+
+.about-text h2,
+.tokenmics-text h2,
+.socials h2,
+.road-map h2,
+.origin-text h2,
+.how-to-buy h2 {
+  font-size: 40px;
+  color: #f8c205;
+  text-shadow: -0px -0px 0 #252322, 0px 0px 0 #252322, -0px 0px 0 #252322,
+    5px 5px 0 #252322;
+}
+
+.about-text p {
+  width: 700px;
+  font-size: 20px;
+  color: #252322;
+  margin-bottom: 60px;
+}
+
+.about-links a {
+  margin-right: 30px;
+  color: #252322;
+  font-size: 18px;
+  border: 3px solid #252322;
+  padding: 10px 15px;
+  background-color: #f8c205;
+}
+
+/* Tokenmics */
+
+.tokenmics-container {
+  display: flex;
+  width: fit-content;
+  background-color: white;
+  padding: 40px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 16px 16px 0px -5px;
+  border: 3px solid #252322;
+  color: #252322;
+}
+
+.tokenmics-img img {
+  width: 400px;
+  margin-right: 60px;
+}
+
+.token-container {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #f8c205;
+  padding: 20px;
+}
+
+.tokenmics-links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tokenmics-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #f4e9df;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 5px 5px 0px 0px;
+  border: 2px solid #252322;
+  margin-right: 20px;
+}
+
+.tokenmics-links a img {
+  width: 30px;
+}
+
+.copy-button {
+  margin-left: 20px;
+  background-color: #e73737;
+  padding: 8px 12px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: white;
+  color: #e73737;
+}
+
+/* SOCAILS */
+
+.socials {
+  font-family: "Dela Gothic One", sans-serif;
+  padding: 80px 0;
+  text-align: center;
+  color: #252322;
+}
+
+.socials p {
+  font-size: 20px;
+  width: 800px;
+  margin: auto;
+}
+
+.socials-links {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-links a {
+  background-color: white;
+  color: #252322;
+  font-size: 35px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 20px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 5px 5px 0px 0px;
+  border: 2px solid #252322;
+}
+
+.socials-links a:hover {
+  background-color: #e73737;
+  color: #f4e9df;
+}
+
+/* FaQ */
+
+.faq {
+  background-color: #e73737;
+  font-family: "Dela Gothic One", sans-serif;
+  padding: 120px 0;
+
+  position: relative;
+}
+
+.faq h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.faq-img {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 300px;
+}
+
+/* RoadMap */
+
+.road-map {
+  padding: 160px 320px;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #252322;
+}
+
+.road-map h2,
+.how-to-buy h2 {
+  text-align: center;
+}
+
+.road-map-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.road-map-element-container {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.road-map-element-container img {
+  width: 180px;
+}
+
+.road-map-element-container h3 {
+  color: #f8c205;
+}
+
+.road-map-element-container p {
+  font-size: 15px;
+}
+
+/* Origin */
+
+.origin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Dela Gothic One", sans-serif;
+  padding: 120px 0 160px;
+}
+
+.origin-text {
+  width: 800px;
+  color: #252322;
+}
+
+/* TimeLine */
+
+.timeline-container {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+.vertical-row {
+  position: relative;
+  border-right: 6px dashed #a8a099;
+  margin: 0 50px;
+}
+
+#scrolling-image {
+  position: absolute;
+  top: -50px; /* Initial top position */
+  left: -50px;
+  width: 100px;
+  height: auto;
+  /* transition: top 0.3s ease-in-out;  Smooth transition for scrolling */
+}
+
+.left-timeline {
+  text-align: right;
+}
+
+.timeline-element h3 {
+  color: #e73737;
+}
+
+/* --- */
+
+.timeline-sup-1 {
+  height: 162px;
+}
+
+.timeline-sup-2 {
+  height: 98px;
+}
+
+.timeline-sup-3 {
+  height: 72px;
+}
+
+.timeline-sup-4 {
+  height: 72px;
+}
+
+.timeline-sup-5 {
+  height: 98px;
+}
+
+.timeline-sup-6 {
+  height: 98px;
+}
+
+.timeline-sup-7 {
+  height: 98px;
+}
+
+.timeline-sup-8 {
+  height: 162px;
+}
+/* Footer */
+
+footer {
+  background-color: #252322;
+  padding: 80px 0;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+.footer-container {
+  background-color: white;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px 20px;
+  color: #252322;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 8px 8px 0px 0px;
+  border: 3px solid #252322;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #f8c205;
+  text-shadow: -0px -0px 0 #252322, 0px 0px 0 #252322, -0px 0px 0 #252322,
+    3px 3px 0 #252322;
+}
+
+.footer-img img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+}
+
+.footer-list li {
+  margin-right: 20px;
+}
+
+.footer-list li a {
+  color: #252322;
+}
+
+.footer-list li a:hover {
+  color: #e73737;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links a {
+  background-color: #f8c205;
+  color: #252322;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 4px 4px 0px 0px;
+  border: 1.5px solid #252322;
+}
+
+.footer-links a:hover {
+  background-color: #e73737;
+  color: white;
+}
+
+.footer-text {
+  text-align: center;
+  color: #f8c205;
+  margin: 60px auto;
+  font-size: 20px;
+  width: 60%;
+}
+
+.footer-copyright {
+  color: white;
+  text-align: center;
+}
+
+/* SUPRATOR CONTAINER */
+
+.suprator-container {
+  position: relative;
+}
+
+.suprator {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  font-family: "Dela Gothic One", sans-serif;
+  /* transform: rotate(5deg); */
+  z-index: 12;
+}
+
+.scrolling-text {
+  display: inline-block;
+  font-size: 24px;
+  animation: scroll-left 50s linear infinite;
+  background-color: #f8c205;
+  border: 5px solid #252322;
+  color: #252322;
+  padding: 7.5px 10px; /* Add padding to avoid clipping the text */
+}
+
+.scrolling-text span {
+  padding-right: 50px; /* Adjust spacing as needed */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.red-word {
+  color: #e73737;
+}
+
+hr {
+  border: 0;
+  border-top: 10px dotted #cac1b8;
+  width: 30%;
+}
+
+.accordion-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 5px 5px 0px 0px;
+  border: 2px solid #252322;
+}
+
+.accordion {
+  width: 100%;
+  border-radius: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.accordion-item {
+  /* border-bottom: 1px solid #ffd200; */
+  margin-bottom: 70px;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.accordion-header {
+  color: #252322;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 200px; /* Adjust this value based on content */
+  padding: 15px 20px;
+}
+
+.accordion-item.open .accordion-header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.content {
+  display: none;
+}
+
+.entring-the-website {
+  background-color: #f8c205;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: "Dela Gothic One", sans-serif;
+
+  z-index: 1011;
+}
+
+/* .entring-the-website img {
+  width: 700px;
+} */
+
+.entring-the-website p {
+  width: 800px;
+  text-align: center;
+  color: #252322;
+  font-size: 20px;
+}
+
+.enter-btn {
+  cursor: pointer;
+  background-color: #e73737;
+  padding: 10px 20px;
+  font-size: 28px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 10px 10px 0px 0px;
+  border: 4px solid #252322;
+  margin-top: 30px;
+}
+
+.enter-btn:hover {
+  background-color: #f4e9df;
+}
+
+.music-btn {
+  color: #252322;
+  font-size: 50px;
+  position: fixed;
+  background-color: #f8c205;
+  border: 3px solid #252322;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 25px;
+  left: 25px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 5px 5px 0px 0px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1600px) {
+  .header-img {
+    width: 375px;
+  }
+
+  .header-paragraph {
+    font-size: 19px;
+    width: 900px;
+  }
+
+  .about-text p {
+    width: 600px;
+    font-size: 18px;
+  }
+
+  .about-img img {
+    width: 450px;
+  }
+
+  .tokenmics-img img {
+    width: 375px;
+  }
+
+  .faq-img {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    width: 272px;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
+
+  .footer-text {
+    width: 75%;
+  }
+
+  .origin-img img {
+    width: 425px;
+  }
+
+  .origin-text {
+    width: 600px;
+  }
+
+  .road-map {
+    padding: 160px 200px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .title {
+    width: 700px;
+  }
+
+  .header-img {
+    width: 325px;
+  }
+
+  .header-paragraph {
+    font-size: 18px;
+    width: 800px;
+  }
+
+  .nav-list {
+    margin: 0 18px;
+    font-size: 23.5px;
+  }
+
+  .about-text p {
+    width: 550px;
+    font-size: 17px;
+  }
+
+  .about-img img {
+    width: 425px;
+  }
+
+  .tokenmics-img img {
+    width: 350px;
+  }
+
+  .tokenmics-text h2 {
+    font-size: 35px;
+  }
+
+  .faq-img {
+    position: absolute;
+    bottom: 3%;
+    right: 0.5%;
+    width: 180px;
+  }
+
+  .footer-container {
+    padding: 5px 10px;
+  }
+
+  .footer-list {
+    font-size: 18px;
+  }
+
+  .road-map {
+    padding: 160px 100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-img {
+    width: 300px;
+  }
+
+  .header-paragraph {
+    font-size: 16px;
+    width: 700px;
+  }
+
+  .nav-list {
+    margin: 0 16px;
+    font-size: 22px;
+  }
+
+  #buy-coin {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .about-text p {
+    width: 450px;
+    font-size: 16px;
+  }
+
+  .about-img img {
+    width: 400px;
+  }
+
+  .about-links a {
+    margin-right: 25px;
+    font-size: 16px;
+    padding: 10px 12.5px;
+  }
+
+  .tokenmics-img img {
+    width: 275px;
+  }
+
+  .tokenmics-text h2 {
+    font-size: 30px;
+  }
+
+  .token-container {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .tokenmics-links a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tokenmics-links a img {
+    width: 20px;
+  }
+
+  .tokenmics-container {
+    padding: 20px 40px;
+  }
+
+  .faq-img {
+    position: absolute;
+    bottom: 1%;
+    right: 0.5%;
+    width: 140px;
+  }
+
+  .footer-text {
+    font-size: 18px;
+  }
+
+  .road-map {
+    padding: 160px 20px;
+  }
+
+  .origin-text {
+    width: 400px;
+  }
+
+  .origin-text p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .title {
+    width: 600px;
+  }
+
+  .header-paragraph {
+    font-size: 15px;
+    width: 650px;
+  }
+
+  .header-img {
+    width: 275px;
+  }
+
+  .nav-list {
+    margin: 0 14px;
+    font-size: 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-right: 0px;
+  }
+
+  .about-links a {
+    margin-right: 0px;
+    font-size: 15px;
+    margin: 0 5px;
+  }
+
+  .tokenmics-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tokenmics-img img {
+    margin-right: 0px;
+  }
+
+  .tokenmics-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .token-container {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .tokenmics-container {
+    padding: 20px 15px;
+  }
+
+  .socials p {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .socials-links a {
+    font-size: 28px;
+    width: 45px;
+    height: 45px;
+    margin: 60px 20px;
+  }
+
+  .accordion-container {
+    width: 90%;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+  }
+
+  .footer-img {
+    font-size: 25px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .footer-list {
+    font-size: 14px;
+  }
+
+  .footer-list li {
+    margin-right: 10px;
+  }
+
+  .footer-img img {
+    width: 60px;
+  }
+
+  .footer-links a {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .footer-container {
+    width: 93%;
+  }
+
+  /* .entring-the-website img {
+    width: 550px;
+  } */
+
+  .entring-the-website p {
+    width: 550px;
+    font-size: 20px;
+  }
+
+  .road-map {
+    padding: 160px 7.5px;
+  }
+
+  .origin {
+    padding: 100px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .origin-text {
+    width: 400px;
+  }
+
+  .origin-text p {
+    font-size: 14px;
+  }
+
+  /* --- */
+
+  .timeline-sup-1 {
+    height: 200px;
+  }
+
+  .timeline-sup-2 {
+    height: 110px;
+  }
+
+  .timeline-sup-3 {
+    height: 110px;
+  }
+
+  .timeline-sup-4 {
+    height: 110px;
+  }
+
+  .timeline-sup-5 {
+    height: 110px;
+  }
+
+  .timeline-sup-6 {
+    height: 130px;
+  }
+
+  .timeline-sup-7 {
+    height: 110px;
+  }
+
+  .timeline-sup-8 {
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 700px) {	.catketoplogo {font-size:5rem;color:#fff;font-weight:bold}
+  .title {
+    width: 400px;
+  }
+
+  .nav-list {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .header-img {
+    width: 200px;
+  }
+
+  .header-paragraph {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .socials p {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .accordion-header {
+    font-size: 14px;
+  }
+
+  .about-text h2,
+  .socials h2,
+  .faq h2 {
+    font-size: 36px;
+  }
+
+  .footer-list {
+    display: none;
+  }
+
+  .footer-container {
+    width: 85%;
+  }
+
+  .footer-text {
+    width: 85%;
+  }
+
+  /* .entring-the-website img {
+    width: 86%;
+  } */
+
+  .entring-the-website p {
+    width: 95%;
+    font-size: 17px;
+  }
+
+  .enter-btn {
+    font-size: 24px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+      rgba(37, 35, 34, 1) 8px 8px 0px 0px;
+    border: 3px solid #252322;
+  }
+
+  .vertical-row {
+    margin: 0 25px;
+  }
+
+  .origin-text {
+    width: 90%;
+  }
+
+  .timeline-element p {
+    font-size: 13px;
+  }
+
+  .origin-img img {
+    width: 90%;
+  }
+
+  .socials-links a {
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    margin: 60px 10px;
+  }
+
+  .road-map h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+	.makememe{font-size:1rem;color:#000;font-weight:bold}
+	.catketoplogo {font-size:3rem;color:#fff;font-weight:bold}
+  .title {
+    width: 300px;
+  }
+
+  .header-paragraph {
+    font-size: 14px;
+    width: 92.5%;
+  }
+
+  .header-img {
+    width: 135px;
+  }
+
+  .about-img img {
+    width: 90%;
+  }
+
+  .about-text p {
+    width: 95%;
+    font-size: 15px;
+  }
+
+  .about-text h2,
+  .socials h2,
+  .faq h2,
+  .how-to-buy h2 {
+    font-size: 30px;
+  }
+
+  .tokenmics-img img {
+    width: 225px;
+  }
+
+  .tokenmics-text h2 {
+    font-size: 25px;
+  }
+
+  .token-container {
+    justify-content: space-between;
+  }
+
+  .token-container span {
+    display: none;
+  }
+
+  .nav-list {
+    margin: 0 5px;
+    font-size: 3.255813953488372vw;
+  }
+
+  nav ul {
+    padding: 10px 10px;
+    justify-content: center;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .footer-copyright {
+    font-size: 13px;
+  }
+
+  .faq .header-icons {
+    display: none;
+  }
+
+  .socials-links a {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    margin: 60px 5px;
+  }
+
+  #scrolling-image {
+    width: 70px;
+    left: -35px;
+  }
+}
+
+.langauge-button {
+  display: flex;
+  width: fit-content;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 16px;
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  z-index: 10000;
+}
+
+.langauge-button div {
+  margin: 0 10px;
+}
+
+#eng,
+#hok {
+  padding: 10px;
+  color: #252322;
+}
+
+#eng {
+  background-color: #e73737;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 4px solid white;
+  border-right: 0;
+}
+
+#hok {
+  background-color: #f8c205;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 4px solid #252322;
+  border-left: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .langauge-button {
+    font-size: 15px;
+    top: 40px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .langauge-button {
+    font-size: 14px;
+    top: 100px;
+    left: 45%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .langauge-button {
+    font-size: 14px;
+    top: 100px;
+    left: 40%;
+  }
+}
+
+#catkepfplink {
+  background: #252322;
+  position: absolute;
+  top: 40px;
+  right: 1.56vw; /* 30px */
+  font-family: "Dela Gothic One", sans-serif;
+  color: white;
+  padding: 0.52vw 0.78vw; /* 10px 15px */
+  font-size: 1.35vw; /* 26px */
+  cursor: pointer;
+  z-index: 999999;
+  border: 4px solid white;
+}
+
+
+
+.how-to-buy {background-color:#252322;
+  font-family: "Dela Gothic One", sans-serif;
+  padding: 5.208vw 0 10.417vw; /* 100px / 1920 = 0.05208, 200px / 1920 = 0.10417 */
+}
+
+.how-to-buy-cards {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2.5vw; /* 75px */
+  padding: 5.208vw 0 0; /* 100px */
+}
+
+.how-to-buy-card {
+  width: 18%; /* Percentage remains the same */
+  height: 15.625vw; /* 300px */
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(37, 35, 34, 1) 0.833vw 0.833vw 0px -0.26vw; /* 16px / 1920 = 0.00833, 5px / 1920 = 0.00260 */
+  border: 0.156vw slid #252322; /* 3px */
+  color: #252322;
+  position: relative;
+  padding: 1vw; /* 20px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.how-to-buy-card h3 {
+  color: #f8c205;
+  font-size: 1.458vw; /* 28px */
+  margin: 0;
+}
+
+.how-to-buy p {
+  font-size: 0.938vw; /* 18px */
+}
+
+.how-to-buy p a {
+  text-decoration: underline;
+  color: #f8c205;
+}
+
+.how-to-buy-card img {
+  position: absolute;
+  width: 7.292vw; /* 175px */
+  bottom: -3.646vw; /* -87.5px */
+}
+
+@media only screen and (max-width: 1024px) {
+  #catkepfplink {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #catkepfplink {
+    font-size: 3.75vw;
+    right: 5vw;
+    top: 11.5vh;
+    padding: 1vw 1vw;
+  }
+
+  .how-to-buy-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15vw;
+  }
+
+  .how-to-buy-card h3 {
+    font-size: 5vw; /* 28px */
+  }
+
+  .how-to-buy p {
+    font-size: 3vw; /* 18px */
+  }
+
+  .how-to-buy-card {
+    width: 80%; /* Percentage remains the same */
+    height: 35vw; /* 300px */
+  }
+
+  .how-to-buy-card img {
+    position: absolute;
+    width: 18.23vw; /* 175px */
+    bottom: -9.114vw; /* -87.5px */
+  }
+}
